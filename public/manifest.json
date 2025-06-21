@@ -1,0 +1,15 @@
+{
+  "name": "SoftSuave",
+  "short_name": "SoftSuave",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FD1942",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml"
+    }
+  ]
+}

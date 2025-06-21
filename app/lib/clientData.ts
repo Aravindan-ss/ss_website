@@ -1,0 +1,27 @@
+export const clientData = {
+  title: "Our Clients",
+  subtitle: "Preferred Technology Partner for Startups and SMBs Globally",
+  description:
+    "We use the latest technology and AI innovation to help startups transform digitally, guiding them through product development with unmatched experience and actionable results.",
+  clientLogos: [
+    { src: "/images/atomise.webp", alt: "Atomise" },
+    { src: "/images/CloudBankin.webp", alt: "CloudBankin" },
+    { src: "/images/Enigma.webp", alt: "Enigma" },
+    { src: "/images/waymore.webp", alt: "waymore" },
+    { src: "/images/whos_up_logo.webp", alt: "whos_up_logo" },
+    { src: "/images/warmpoint_logo.webp", alt: "warmpoint_logo" },
+    { src: "/images/utiliko_logo.webp", alt: "utiliko_logo" },
+    { src: "/images/trafficspy_logo.webp", alt: "trafficspy_logo" },
+    { src: "/images/the2020diet_logo.webp", alt: "the2020diet_logo" },
+    { src: "/images/teamicate_logo.webp", alt: "teamicate_logo" },
+    { src: "/images/sulekha_logo.webp", alt: "sulekha_logo" },
+    { src: "/images/promostv_logo.webp", alt: "promostv_logo" },
+    { src: "/images/poorvika_logo.webp", alt: "poorvika_logo" },
+    { src: "/images/pacewisdom_logo.webp", alt: "pacewisdom_logo" },
+    { src: "/images/outsource_logo.webp", alt: "outsource_logo" },
+    { src: "/images/omri_logo.webp", alt: "omri_logo" },
+    { src: "/images/officespace_logo.webp", alt: "officespace_logo" },
+    { src: "/images/oasisdigital_logo.webp", alt: "oasisdigital_logo" },
+    { src: "/images/netsmartz_logo.webp", alt: "netsmartz_logo" },
+  ],
+};
