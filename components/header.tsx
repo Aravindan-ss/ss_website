@@ -45,16 +45,18 @@ const Header = () => {
     <header className="border-b border-gray-200 sticky top-0 bg-white z-[999999]">
       <div className="lg:container mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center space-x-3">
-          <Image
-            src={headerData?.logo}
-            alt={headerData?.logoAlt}
-            width={200}
-            height={50}
-            loading="lazy"
-            className="h-8 w-auto"
-          />
+          <Link href="/" className="flex items-center">
+            <Image
+              src={headerData?.logo}
+              alt={headerData?.logoAlt}
+              width={200}
+              height={50}
+              loading="lazy"
+              className="h-8 w-auto"
+            />
+          </Link>
         </div>
-
+        {/*header*/ }
         <div className="lg:ml-auto lg:mr-[1rem]">
           <div className="flex items-end space-x-6 flex-col">
             <div className="hidden sm:flex items-center space-x-2 text-sm gap-2 m-0">
@@ -84,7 +86,7 @@ const Header = () => {
                     before:border-l-transparent before:border-r-transparent before:border-t-transparent
                     before:border-b-[rgba(247,55,87,0.9)] before:drop-shadow-[0_0_5px_rgba(247,55,87,0.3)]
                     ${
-                      isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                      isOpen ? "opacity-100 visible" : "opacity-0 hidden"
                     } group-hover:opacity-100 group-hover:visible`}
                 >
                   <ContactCard />
@@ -147,7 +149,11 @@ const Header = () => {
           </button>
         </div>
         <div className="lg:hidden flex items-center">
-          {!isMobileMenuOpen && (
+          {isMobileMenuOpen ? (
+            <button onClick={() => toggleMobileMenu()}>
+              <i className="fa fa-times text-2xl"></i>
+            </button>
+          ) : (
             <button
               aria-label="Toggle navigation menu"
               className="navbar-toggler p-0 border-0 rounded-0"
@@ -157,11 +163,6 @@ const Header = () => {
               <span className="top"></span>
               <span className="middle"></span>
               <span className="bottom"></span>
-            </button>
-          )}
-          {isMobileMenuOpen && (
-            <button onClick={() => toggleMobileMenu()}>
-              <i className="fa fa-times text-2xl"></i>
             </button>
           )}
         </div>

@@ -8,7 +8,7 @@ export const heroSectionData = {
   subheadingclass: "",
   description:
     "Enhance compliance, optimize financial operations, and reduce fraud with cutting-edge AI technology. Gain real-time insights, mitigate risks, and personalized financial services with AI automation.",
-  textAlign: "left" as "left",
+  textAlign: "left",
   textColor: "text-white",
   showButton: true,
   buttonText: "Request a Consultation",
