@@ -1,11 +1,11 @@
-import AiSolution1 from "../components/aiSolution1";
-import BookConsultation from "../components/bookConsultation";
-import ClientsSection from "../components/clientSection";
-import ConsultationBanner from "../components/consultationBanner";
-import HeroSection from "../components/heroSection";
-import AviationOverview from "../components/industryOverview";
-import KeyBenefits1 from "../components/keyBenefits1";
-import SuccessStories2 from "../components/successStories2";
+import AiSolution1 from "../../components/aiSolution1";
+import BookConsultation from "../../components/bookConsultation";
+import ClientsSection from "../../components/clientSection";
+import ConsultationBanner from "../../components/consultationBanner";
+import HeroSection from "../../components/heroSection";
+import AviationOverview from "../../components/industryOverview";
+import KeyBenefits1 from "../../components/keyBenefits1";
+import SuccessStories2 from "../../components/successStories2";
 import {
   aiSolutions,
   aviationIndustryOverview,
@@ -14,8 +14,8 @@ import {
   keyBenefits,
   successStories,
   technologiesSection,
-} from "../lib/ai-solutions-in-edutech-data";
-import { clientData } from "../lib/clientData";
+} from "../../lib/ai-solutions-in-edutech-data";
+import { clientData } from "../../lib/clientData";
 
 const AiInAviation = () => {
   return (
