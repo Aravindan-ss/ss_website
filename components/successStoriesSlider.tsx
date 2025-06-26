@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 interface Story {
   id: number;
@@ -16,7 +17,8 @@ interface SuccessStoriesProps {
   description?: string;
   buttontext?: string;
   storiestitle?: string;
-  stories?: Story[];
+  pointsIcon: string;
+  stories: Story[];
 }
 
 const SuccessStories: React.FC<SuccessStoriesProps> = ({
@@ -26,13 +28,14 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({
   buttontext,
   storiestitle,
   stories,
+  pointsIcon,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % stories.length);
-    }, 5000);
+    }, 12000);
     return () => clearInterval(interval);
   }, [stories.length]);
 
@@ -60,15 +63,18 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({
         </div>
 
         {/* Main Card */}
-        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500">
+        <div className="relative p-[10px] bg-white rounded-3xl shadow shadow-2xl transition-all duration-500">
           <div className="flex flex-col lg:flex-row">
             {/* Image */}
-            <div className="lg:w-1/2 h-[300px] sm:h-[400px] lg:h-auto overflow-hidden">
-              <img
-                src={currentStory.image}
-                alt="Success Story"
-                className="object-cover w-full h-full"
-              />
+            <div className="lg:w-1/2 h-[300px] sm:h-[400px] lg:h-auto overflow-hidden flex items-center justify-center">
+              <div className="relative w-[500px] h-[350px]">
+                <Image
+                  src={currentStory.image}
+                  alt="Success Story"
+                  className="object-cover rounded-[15px]"
+                  fill
+                />
+              </div>
             </div>
 
             {/* Content */}
@@ -82,20 +88,20 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({
               </h4>
               <ul className="space-y-4 mb-8">
                 {currentStory.results.map((text, index) => (
-                  <li
+                  <div
                     key={index}
-                    className="
-                  relative pl-10 text-gray-700 leading-snug text-start
-                  after:content-['➣']
-                  after:text-red-500
-                  after:absolute
-                  after:left-0
-                  after:top-[-6px]
-                  after:text-2xl
-                "
+                    className="flex items-center gap-[4px] text-gray-700"
                   >
+                    <Image
+                      key={index}
+                      src={pointsIcon}
+                      alt="Check Icon"
+                      width={30}
+                      height={30}
+                      className="inline-block mr-2"
+                    />
                     {text}
-                  </li>
+                  </div>
                 ))}
               </ul>
 

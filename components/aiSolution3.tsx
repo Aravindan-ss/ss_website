@@ -48,13 +48,13 @@ const AiSolution3 = ({
             <button
               key={idx}
               onClick={() => setActive(idx)}
-              className={`flex items-center gap-2 border-b-2 px-2 pb-1 text-sm font-semibold cursor-pointer ${
+              className={`flex items-center gap-2 border-b-2 px-2 pb-1 text-lg font-bold cursor-pointer ${
                 active === idx
                   ? "text-[#f20656] border-[#f20656]"
                   : "text-gray-700 border-transparent"
               } transition`}
             >
-              <Image src={tab.icon} alt={tab.label} width={20} height={20} />
+              <Image src={tab.icon} alt={tab.label} width={30} height={30} />
               {tab.label}
             </button>
           ))}
@@ -66,16 +66,17 @@ const AiSolution3 = ({
             <p className="text-4xl font-bold text-[#f20656]">
               {current.number}
             </p>
-            <h3 className="text-2xl font-bold">{current.title}</h3>
-            <p className="text-gray-700">{current.description}</p>
+            <h3 className="text-3xl font-bold">{current.title}</h3>
+            <p className="text-[17px] font-normal leading-[34px]">{current.description}</p>
           </div>
 
           <div className="lg:w-1/2">
             <Image
               src={current.image}
               alt={current.title}
-              width={800}
+              width={700}
               height={600}
+              className="rounded-2xl"
             />
           </div>
         </div>

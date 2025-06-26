@@ -8,7 +8,7 @@ export interface FeatureBlockProps {
   features: {
     title: string;
     content: string;
-    image: string;
+    image?: string;
     alt: string;
   }[];
 }
@@ -21,16 +21,16 @@ const AiSolutions = ({
 }: FeatureBlockProps) => {
   return (
     <section className="py-12 w-full">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* Header Section */}
-        <div className="lg:w-2/3 mb-12">
+        <div className="lg:w-2/3 mb-12  text-[30.245px] leading-[45.3675px]">
           <span className="caveat-custom text-[34px] font-extrabold text-[#ff0042] mb-2 block">
             {label}
           </span>
           <h2 className="text-2xl md:text-[calc(1.25rem+0.75vw)] font-bold text-[#232c3b] mb-4">
             {heading}
           </h2>
-          <p className="text-[17px] text-gray-600 leading-relaxed md:leading-[1.75]">
+          <p className="text-[17px] text-gray-700 leading-relaxed md:leading-[1.75]">
             {description}
           </p>
         </div>
@@ -43,7 +43,7 @@ const AiSolutions = ({
           return (
             <div
               key={index}
-              className={`flex flex-col lg:flex-row gap-10 mb-16 ${
+              className={`flex flex-col lg:flex-row gap-10  ${
                 isEven ? "lg:flex-row-reverse" : ""
               }`}
             >
