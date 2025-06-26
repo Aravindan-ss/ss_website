@@ -25,58 +25,6 @@ export const keyAreas = [
   },
 ];
 
-export const fintechCards = [
-  {
-    id: 1,
-    icon: "/icons/payment-icon.svg",
-    title: "AI-Driven Transaction Optimization & Security",
-    description:
-      "We provide intelligent solutions for seamless payment tracking, multi-token processing, and proactive fraud prevention, ensuring secure and efficient financial operations.",
-    image: "/images/payment.jpg",
-  },
-  {
-    id: 2,
-    icon: "/icons/payment-icon.svg",
-    title: "AI-Driven Transaction Optimization & Security",
-    description:
-      "We provide intelligent solutions for seamless payment tracking, multi-token processing, and proactive fraud prevention, ensuring secure and efficient financial operations.",
-    image: "/images/payment.jpg",
-  },
-  {
-    id: 3,
-    icon: "/icons/payment-icon.svg",
-    title: "AI-Driven Transaction Optimization & Security",
-    description:
-      "We provide intelligent solutions for seamless payment tracking, multi-token processing, and proactive fraud prevention, ensuring secure and efficient financial operations.",
-    image: "/images/payment.jpg",
-  },
-  {
-    id: 4,
-    icon: "/icons/payment-icon.svg",
-    title: "AI-Driven Transaction Optimization & Security",
-    description:
-      "We provide intelligent solutions for seamless payment tracking, multi-token processing, and proactive fraud prevention, ensuring secure and efficient financial operations.",
-    image: "/images/payment.jpg",
-  },
-  {
-    id: 5,
-    icon: "/icons/payment-icon.svg",
-    title: "AI-Driven Transaction Optimization & Security",
-    description:
-      "We provide intelligent solutions for seamless payment tracking, multi-token processing, and proactive fraud prevention, ensuring secure and efficient financial operations.",
-    image: "/images/payment.jpg",
-  },
-  {
-    id: 6,
-    icon: "/icons/chart.svg",
-    title: "Predictive Financial Analytics",
-    description:
-      "Leverage data-driven insights to anticipate market trends, risks, and opportunities with real-time predictive models.",
-    image: "/images/analytics.jpg",
-  },
-  // Add
-];
-
 export const tabs = [
   {
     label: "Smart Scheduling",
@@ -127,51 +75,6 @@ export const tabs = [
       "Our AI solutions include cost and deadline estimators, employee productivity tracking, and intelligent alerts for delays, budget overruns, and dependency issues.",
     image:
       "/images/ai-solutions-for-construction/ai-solution-1/const-tab-5.webp",
-  },
-];
-
-export const benefits = [
-  {
-    icon: "/images/ai-in-aviation-images/AI1.webp",
-    title: "Proactive Maintenance & MRO Efficiency",
-    description:
-      "AI enables proactive maintenance and streamlines MRO operations to reduce downtime, improve aircraft health monitoring, and boost maintenance turnaround efficiency.",
-    borderColor: "border-pink-500",
-  },
-  {
-    icon: "/images/ai-in-aviation-images/AI1.webp",
-    title: "Smarter Scheduling & Resource Optimization",
-    description:
-      "AI optimizes flight scheduling and resource allocation, ensuring better aircraft usage, crew deployment, and operational efficiency across airports and airline networks.",
-    borderColor: "border-blue-500",
-  },
-  {
-    icon: "/images/ai-in-aviation-images/AI1.webp",
-    title: "Enhanced Air Traffic & Flight Management",
-    description:
-      "Advanced AI systems improve air traffic management by predicting congestion, optimizing flight paths, and enabling safer, more efficient navigation through busy airspace.",
-    borderColor: "border-green-500",
-  },
-  {
-    icon: "/images/ai-in-aviation-images/AI1.webp",
-    title: "Personalized Passenger Experience & Service",
-    description:
-      "AI enhances the passenger journey by offering real-time personalization, reducing delays, and streamlining airport services for a seamless, engaging travel experience.",
-    borderColor: "border-purple-500",
-  },
-  {
-    icon: "/images/ai-in-aviation-images/AI1.webp",
-    title: "Intelligent Security & Threat Detection",
-    description:
-      "AI strengthens security through smart threat detection, behavioral analysis, and predictive alerts, improving safety for passengers, crew, and ground operations.",
-    borderColor: "border-yellow-400",
-  },
-  {
-    icon: "/images/ai-in-aviation-images/AI1.webp",
-    title: "Baggage Handling, Fuel Use & Cost Savings",
-    description:
-      "AI improves baggage tracking, logistics optimization, and fuel efficiency, reducing operational costs and environmental impact while ensuring reliable, on-time luggage delivery.",
-    borderColor: "border-pink-500",
   },
 ];
 
@@ -299,12 +202,14 @@ export const successStoriesData = {
     "Explore how our AI-driven solutions have transformed financial operations and delivered measurable results for our clients. These case studies highlight the power of innovation and efficiency in driving business growth.",
   buttontext: "Know More",
   storiestitle: "Results:",
-  pointsIcon: "/images/ai-solutions-for-construction/success-stories/construction-icon.png",
+  pointsIcon:
+    "/images/ai-solutions-for-construction/success-stories/construction-icon.png",
   stories: [
     {
       id: 1,
       title: "CRM Application for Real Estate Management",
-      image: "/images/ai-solutions-for-construction/success-stories/construction-card-bg-1.webp",
+      image:
+        "/images/ai-solutions-for-construction/success-stories/construction-card-bg-1.webp",
       results: [
         "Delivered a 360-degree digital view of real estate properties",
         "Developed separate web apps for internal and external stakeholders",
@@ -316,7 +221,8 @@ export const successStoriesData = {
     {
       id: 2,
       title: "Job Progress Tracking: Task Completion & Performance Insights",
-      image: "/images/ai-solutions-for-construction/success-stories/construction-card-bg-2.webp",
+      image:
+        "/images/ai-solutions-for-construction/success-stories/construction-card-bg-2.webp",
       results: [
         "Streamlined project oversight with a unified task management system",
         "Enabled real-time workload tracking and smart task delegation",

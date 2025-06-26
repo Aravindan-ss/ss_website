@@ -1,21 +1,16 @@
 import AiSolution from "../../components/aiSolution";
-import AiSolution1 from "../../components/aiSolution1";
-import AiSolution2 from "../../components/aisolution2";
 import AiSolution3 from "../../components/aiSolution3";
 import BookConsultation from "../../components/bookConsultation";
 import ClientsSection from "../../components/clientSection";
 import ConsultationBanner from "../../components/consultationBanner";
 import HeroSection from "../../components/heroSection";
 import IndustryOverview from "../../components/industryOverview";
-import KeyBenefits from "../../components/keyBenefits";
 import { clientData } from "../../lib/clientData";
 import SuccessStories from "../../components/successStoriesSlider";
 import { technologiesSection } from "../../lib/ai-in-aviation-data";
 import {
   tabs,
-  benefits,
   keyAreas,
-  fintechCards,
   heroSectionData,
   industryOverview,
   aiTabConstructionSolutions,
