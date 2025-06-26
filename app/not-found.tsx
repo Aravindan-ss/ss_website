@@ -1,6 +1,6 @@
 // app/not-found.tsx
 import Image from "next/image";
-import { notFoundPageData } from "./lib/mainPageData";
+import { notFoundPageData } from "../lib/mainPageData";
 
 const NotFound = () => {
   return (

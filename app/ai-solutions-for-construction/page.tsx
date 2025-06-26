@@ -1,14 +1,14 @@
-import AiSolution from "../components/aiSolution";
-import AiSolution1 from "../components/aiSolution1";
-import AiSolution2 from "../components/aisolution2";
-import AiSolution3 from "../components/aiSolution3";
-import BookConsultation from "../components/bookConsultation";
-import ClientsSection from "../components/clientSection";
-import ConsultationBanner from "../components/consultationBanner";
-import HeroSection from "../components/heroSection";
-import AviationOverview from "../components/industryOverview";
-import KeyBenefits from "../components/keyBenefits";
-import SuccessStories from "../components/successStoriesSlider";
+import AiSolution from "../../components/aiSolution";
+import AiSolution1 from "../../components/aiSolution1";
+import AiSolution2 from "../../components/aisolution2";
+import AiSolution3 from "../../components/aiSolution3";
+import BookConsultation from "../../components/bookConsultation";
+import ClientsSection from "../../components/clientSection";
+import ConsultationBanner from "../../components/consultationBanner";
+import HeroSection from "../../components/heroSection";
+import AviationOverview from "../../components/industryOverview";
+import KeyBenefits from "../../components/keyBenefits";
+import SuccessStories from "../../components/successStoriesSlider";
 
 const keyAreas = [
   {
@@ -308,6 +308,7 @@ const AiInAviation = () => {
         ]}
       />
       <AiSolution2
+        title="AI Solutions"
         heading="Future of FinTech Built with AI"
         subheading="Soft Suave's AI solutions empower fintech with intelligent automation, data-driven insights, and enhanced efficiency, shaping the future of financial innovation. Here are some potential AI-driven solutions we offer."
         buttonText="Get In Touch"

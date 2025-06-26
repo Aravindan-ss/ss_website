@@ -1,12 +1,12 @@
-import AiSolution2 from "../components/aisolution2";
-import BookConsultation from "../components/bookConsultation";
-import ClientsSection from "../components/clientSection";
-import ConsultationBanner from "../components/consultationBanner";
-import HeroSection from "../components/heroSection";
-import AviationOverview from "../components/industryOverview";
-import KeyBenefits from "../components/keyBenefits";
-import SuccessStories from "../components/successStoriesSlider";
-import { clientData } from "../lib/clientData";
+import AiSolution2 from "../../components/aisolution2";
+import BookConsultation from "../../components/bookConsultation";
+import ClientsSection from "../../components/clientSection";
+import ConsultationBanner from "../../components/consultationBanner";
+import HeroSection from "../../components/heroSection";
+import AviationOverview from "../../components/industryOverview";
+import KeyBenefits from "../../components/keyBenefits";
+import SuccessStories from "../../components/successStoriesSlider";
+import { clientData } from "../../lib/clientData";
 import {
   aiSolutions,
   aviationIndustryOverview,
@@ -15,7 +15,7 @@ import {
   keyBenefits,
   successStories,
   technologiesSection,
-} from "../lib/fintech-ai-solutions-data";
+} from "../../lib/fintech-ai-solutions-data";
 
 const keyAreas = [
   {

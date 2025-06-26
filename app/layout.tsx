@@ -1,11 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Caveat } from "next/font/google";
 import "./styles/globals.css";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import { Metadata } from "next";
 import { Viewport } from "next";
-import SchemaOrg from "./components/SchemaOrg";
+import SchemaOrg from "../components/SchemaOrg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -16,7 +16,7 @@ interface SuccessStoriesProps {
   description?: string;
   buttontext?: string;
   storiestitle?: string;
-  stories: Story[];
+  stories?: Story[];
 }
 
 const SuccessStories: React.FC<SuccessStoriesProps> = ({

@@ -1,16 +1,16 @@
 // Main Page
 import React from "react";
 import Image from "next/image";
-import ClientsSection from "./components/clientSection";
-import IndustriesSection from "./components/industriesSection";
-import ServicesSection from "./components/servicesSection";
-import ChooseUs from "./components/chooseUs";
-import CounterSection from "./components/counter";
-import AwardSection from "./components/awards";
-import TechStackSection from "./components/technology";
-import Testimonials from "./components/testimonial";
-import { mainPageData } from "./lib/mainPageData";
-import { clientData } from "./lib/clientData";
+import ClientsSection from "../components/clientSection";
+import IndustriesSection from "../components/industriesSection";
+import ServicesSection from "../components/servicesSection";
+import ChooseUs from "../components/chooseUs";
+import CounterSection from "../components/counter";
+import AwardSection from "../components/awards";
+import TechStackSection from "../components/technology";
+import Testimonials from "../components/testimonial";
+import { mainPageData } from "../lib/mainPageData";
+import { clientData } from "../lib/clientData";
 
 const Home = () => {
   return (
