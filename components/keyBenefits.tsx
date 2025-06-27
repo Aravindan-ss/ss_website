@@ -5,7 +5,7 @@ interface BenefitCard {
   icon: string;
   title: string;
   description: string;
-  borderColor: string; // e.g., 'border-pink-500', 'border-blue-500'
+  borderClassName: string; // e.g., 'border-pink-500', 'border-blue-500'
 }
 
 interface AviationBenefitsProps {
@@ -42,7 +42,7 @@ const KeyBenefits = ({
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className={`rounded-xl border-t-4 ${card.borderColor} bg-white shadow-sm p-6 transition hover:shadow-md`}
+              className={`rounded-xl ${card.borderClassName} bg-white shadow-sm p-6 transition hover:shadow-md`}
             >
               <Image src={card.icon} alt={card.title} width={64} height={64} />
               <h4 className="font-bold text-[20px] mt-4">{card.title}</h4>

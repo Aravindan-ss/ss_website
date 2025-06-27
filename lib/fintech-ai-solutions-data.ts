@@ -110,42 +110,42 @@ export const keyBenefits = {
       title: "Advanced Fraud Prevention & Risk Management",
       description:
         "AI strengthens security with real-time fraud detection, risk assessment, and anomaly detection to safeguard financial transactions. Predictive intelligence minimizes threats before they escalate.",
-      borderColor: "border-pink-500",
+      borderClassName: "border-pink-500 border-t-4",
     },
     {
       icon: "/images/fintech-ai-solutions-images/FBI2.webp",
       title: "Seamless Automation & Operational Efficiency",
       description:
         "Intelligent automation streamlines financial processes reduces manual effort, and enhances overall efficiency. Faster workflows mean reduced costs and improved accuracy.",
-      borderColor: "border-blue-500",
+      borderClassName: "border-blue-500  border-t-4",
     },
     {
       icon: "/images/fintech-ai-solutions-images/FBI3.webp",
       title: "Personalized Customer Experiences & Smarter Decisions",
       description:
         "AI-driven insights enable tailored financial solutions, faster decision-making, and improved user engagement. Adaptive learning refines interactions for a seamless experience.",
-      borderColor: "border-green-500",
+      borderClassName: "border-green-500 border-t-4",
     },
     {
       icon: "/images/fintech-ai-solutions-images/FBI4.webp",
       title: "Regulatory Compliance & Secure Transactions",
       description:
         "Automated compliance monitoring and real-time payment security ensure adherence to regulations while preventing financial threats. AI keeps financial institutions ahead of evolving policies.",
-      borderColor: "border-purple-500",
+      borderClassName: "border-purple-500  border-t-4",
     },
     {
       icon: "/images/fintech-ai-solutions-images/FBI5.webp",
       title: "Optimized Trading & Investment Strategies",
       description:
         "AI-powered analytics improve market predictions, automate trading, and refine investment strategies for better financial outcomes. Smarter insights drive higher returns and lower risks.",
-      borderColor: "border-yellow-400",
+      borderClassName: "border-yellow-400  border-t-4",
     },
     {
       icon: "/images/fintech-ai-solutions-images/FBI6.webp",
       title: "Scalability & Continuous Innovation",
       description:
         "AI evolves with data, allowing fintech solutions to scale effortlessly while adapting to changing financial landscapes. Future-ready technology grows with your business needs.",
-      borderColor: "border-pink-500",
+      borderClassName: "border-pink-500  border-t-4",
     },
   ],
 };
