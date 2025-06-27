@@ -7,7 +7,7 @@ export const heroSectionData = {
   subheadingclass: "text-[#D8F629]",
   description:
     "Smarter skies start with AI, boosting flight efficiency, elevating safety standards, and crafting seamless, personalized experiences from takeoff to touchdown.",
-  textAlign: "left" as "left",
+  textAlign: "left" as const,
   textColor: "text-white",
   showButton: true,
   buttonText: "Request a Consultation",
@@ -103,42 +103,42 @@ export const keyBenefits = {
       title: "Proactive Maintenance & MRO Efficiency",
       description:
         "AI enables proactive maintenance and streamlines MRO operations to reduce downtime, improve aircraft health monitoring, and boost maintenance turnaround efficiency.",
-      borderColor: "border-pink-500",
+      borderClassName: "border-pink-500 border-t-4",
     },
     {
       icon: "/images/ai-in-aviation-images/ABI2.webp",
       title: "Smarter Scheduling & Resource Optimization",
       description:
         "AI optimizes flight scheduling and resource allocation, ensuring better aircraft usage, crew deployment, and operational efficiency across airports and airline networks.",
-      borderColor: "border-blue-500",
+      borderClassName: "border-blue-500 border-t-4",
     },
     {
       icon: "/images/ai-in-aviation-images/ABI3.webp",
       title: "Enhanced Air Traffic & Flight Management",
       description:
         "Advanced AI systems improve air traffic management by predicting congestion, optimizing flight paths, and enabling safer, more efficient navigation through busy airspace.",
-      borderColor: "border-green-500",
+      borderClassName: "border-green-500  border-t-4",
     },
     {
       icon: "/images/ai-in-aviation-images/ABI4.webp",
       title: "Personalized Passenger Experience & Service",
       description:
         "AI enhances the passenger journey by offering real-time personalization, reducing delays, and streamlining airport services for a seamless, engaging travel experience.",
-      borderColor: "border-purple-500",
+      borderClassName: "border-purple-500  border-t-4",
     },
     {
       icon: "/images/ai-in-aviation-images/ABI5.webp",
       title: "Intelligent Security & Threat Detection",
       description:
         "AI strengthens security through smart threat detection, behavioral analysis, and predictive alerts, improving safety for passengers, crew, and ground operations.",
-      borderColor: "border-yellow-400",
+      borderClassName: "border-yellow-400  border-t-4",
     },
     {
       icon: "/images/ai-in-aviation-images/ABI6.webp",
       title: "Baggage Handling, Fuel Use & Cost Savings",
       description:
         "AI improves baggage tracking, logistics optimization, and fuel efficiency, reducing operational costs and environmental impact while ensuring reliable, on-time luggage delivery.",
-      borderColor: "border-pink-500",
+      borderClassName: "border-pink-500 border-t-4",
     },
   ],
 };
