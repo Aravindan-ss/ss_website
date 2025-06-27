@@ -10,7 +10,7 @@ export const heroSectionData = {
   subheadingclass: "",
   description:
     "Explore AI solutions that adapt to learner needs, enhance teaching efficiency, and automate administrative workflows. Build future-ready learning experiences with AI.",
-  textAlign: "left" as "left",
+  textAlign: "left" as const,
   textColor: "text-white",
   showButton: true,
   buttonText: "Request a Consultation",
