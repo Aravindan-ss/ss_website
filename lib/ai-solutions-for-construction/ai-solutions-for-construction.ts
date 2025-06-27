@@ -233,3 +233,82 @@ export const successStoriesData = {
     },
   ],
 };
+
+export const technologiesSection = {
+  title: "Technologies",
+  subtitle: "Innovative AI Technologies & Approaches",
+  description:
+    "Using advanced AI-driven strategies & tools, we improve learning experiences, streamline operations, & reduce costs. Our approach focuses on intelligent automation, personalized learning, & data-centric decision-making to create impactful and scalable educational solutions.",
+  clientLogos: [
+    {
+      src: "/images/ai-in-aviation-images/tech1.webp",
+      alt: "Hugging Face",
+      title: "Hugging Face",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech2.webp",
+      alt: "LangChain",
+      title: "LangChain",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech3.webp",
+      alt: "PyTorch",
+      title: "PyTorch",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech4.webp",
+      alt: "FastAPI",
+      title: "FastAPI",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech5.webp",
+      alt: "Google",
+      title: "Llama",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech6.webp",
+      alt: "Gemini",
+      title: "Gemini",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech7.webp",
+      alt: "Crew AI",
+      title: "Crew AI",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech1.webp",
+      alt: "Hugging Face",
+      title: "Hugging Face",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech2.webp",
+      alt: "LangChain",
+      title: "LangChain",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech3.webp",
+      alt: "PyTorch",
+      title: "PyTorch",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech4.webp",
+      alt: "FastAPI",
+      title: "FastAPI",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech5.webp",
+      alt: "Google",
+      title: "Llama",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech6.webp",
+      alt: "Gemini",
+      title: "Gemini",
+    },
+    {
+      src: "/images/ai-in-aviation-images/tech7.webp",
+      alt: "Crew AI",
+      title: "Crew AI",
+    },
+  ],
+};
