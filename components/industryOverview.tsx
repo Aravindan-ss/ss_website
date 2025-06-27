@@ -5,23 +5,25 @@ interface KeyArea {
   title: string;
 }
 
-interface AviationOverviewProps {
+interface IndustryOverviewProps {
   sectionLabel: string;
   headline: string;
   description: string;
   keyAreas: KeyArea[];
   imageSrc: string;
   altText?: string;
+  flexReverse?: boolean;
 }
 
-export default function AviationOverview({
+export default function IndustryOverview({
   sectionLabel,
   headline,
   description,
   keyAreas,
   imageSrc,
+  flexReverse = false,
   altText = "AI in Aviation",
-}: AviationOverviewProps) {
+}: IndustryOverviewProps) {
   const half = Math.ceil(keyAreas.length / 2);
   const leftItems = keyAreas.slice(0, half);
   const rightItems = keyAreas.slice(half);
@@ -29,7 +31,11 @@ export default function AviationOverview({
   return (
     <section className="py-12 w-full">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center lg:flex-row gap-16">
+        <div
+          className={`flex flex-col items-center lg:flex-row gap-16 ${
+            flexReverse ? "lg:flex-row-reverse" : ""
+          }`}
+        >
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
             <p className="caveat-custom text-[34px] font-extrabold text-[#ff0042] mb-2 flex">

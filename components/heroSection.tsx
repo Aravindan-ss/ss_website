@@ -26,7 +26,7 @@ const DynamicHero: React.FC<DynamicHeroProps> = ({
   altText,
   title,
   beforeheading,
-  heading, 
+  heading,
   afterheading,
   subheading,
   headingclass,
@@ -54,16 +54,15 @@ const DynamicHero: React.FC<DynamicHeroProps> = ({
         >
           {title && <h1 className="sr-only">{title}</h1>}
           {heading && (
-            <h2 className="leading-tight font-extrabold text-white text-[calc(1.5rem+2.5vw)] xl:text-[calc(1.5rem+1.75vw)] lg:text-[calc(1.5rem+2vw)]">
+            <h1 className="leading-tight font-bold text-white text-[calc(1.5rem+2.5vw)] xl:text-[calc(1.5rem+1.75vw)] lg:text-[calc(1.5rem+2vw)]">
               <span className="block">
                 {/* Split with highlighting (e.g., "AI-Driven", "EdTech", rest) */}
                 {beforeheading}{" "}
                 <span className={`${headingclass}`}>{heading}</span>{" "}
                 {afterheading}
-                <br />
                 <span className={`${subheadingclass}`}>{subheading}</span>
               </span>
-            </h2>
+            </h1>
           )}
           {description && (
             <p className="leading-[1.5] text-[1rem] xl:text-[1.25rem]">
@@ -72,13 +71,17 @@ const DynamicHero: React.FC<DynamicHeroProps> = ({
           )}
           {/* Tailwind-based Button */}
           {showButton && (
-            <Link
-              href={buttonLink ?? "#"}
-              className="inline-flex items-center justify-center gap-2 px-10 py-3 font-medium bg-[#ff0042] rounded-[10px] hover:border hover:bg-transparent hover:border-white"
-            >
-              {buttonText}
-              <i className="fa-solid fa-arrow-right-long animate-arrow-anime"></i>
-            </Link>
+            <div className="inline-block w-[300px] h-[40px]">
+              {" "}
+              {/* Fixed width and height */}
+              <Link
+                href={buttonLink ?? "#"}
+                className="inline-flex items-center justify-center gap-2 w-full h-full font-medium bg-[#ff0042] rounded-[10px] hover:border hover:bg-transparent hover:border-white"
+              >
+                {buttonText}
+                <i className="fa-solid fa-arrow-right-long animate-arrow-anime"></i>
+              </Link>
+            </div>
           )}
         </div>
       </div>
