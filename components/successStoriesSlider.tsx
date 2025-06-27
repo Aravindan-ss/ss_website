@@ -17,7 +17,7 @@ interface SuccessStoriesProps {
   description?: string;
   buttontext?: string;
   storiestitle?: string;
-  pointsIcon: string;
+  pointsIcon?: string;
   stories: Story[];
 }
 
@@ -87,22 +87,30 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({
                 {storiestitle}
               </h4>
               <ul className="space-y-4 mb-8">
-                {currentStory.results.map((text, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-[4px] text-gray-700"
-                  >
-                    <Image
+                {currentStory.results.map((text, index) =>
+                  pointsIcon ? (
+                    <div
                       key={index}
-                      src={pointsIcon}
-                      alt="Check Icon"
-                      width={30}
-                      height={30}
-                      className="inline-block mr-2"
-                    />
-                    {text}
-                  </div>
-                ))}
+                      className="flex items-center gap-[4px] text-gray-700"
+                    >
+                      <Image
+                        src={pointsIcon}
+                        alt="Check Icon"
+                        width={30}
+                        height={30}
+                        className="inline-block mr-2"
+                      />
+                      {text}
+                    </div>
+                  ) : (
+                    <li
+                      key={index}
+                      className="relative pl-10 text-gray-700 leading-snug text-start after:content-['➣'] after:text-red-500 after:absolute after:left-0 after:top-[-6px] after:text-2xl"
+                    >
+                      {text}
+                    </li>
+                  )
+                )}
               </ul>
 
               <button className="bg-[#ff0042] text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:bg-[#e60039] transition cursor-pointer w-fit">
