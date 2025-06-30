@@ -94,8 +94,14 @@ const AiSolution1 = ({
                 </div>
 
                 {/* Expanded Content */}
-                {active === feature.id && (
-                  <div className="mt-4">
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    active === feature.id
+                      ? "max-h-[1000px] opacity-100 mt-4"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div>
                     {feature.image && (
                       <div className="w-full h-[300px] relative rounded-lg mb-2 overflow-hidden">
                         <Image
@@ -106,11 +112,11 @@ const AiSolution1 = ({
                         />
                       </div>
                     )}
-                    <p className="text-justify text-gray leading-loose">
+                    <p className="text-[17px] font-normal h-[102px] leading-[34px] text-gray-600">
                       {feature.description}
                     </p>
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
