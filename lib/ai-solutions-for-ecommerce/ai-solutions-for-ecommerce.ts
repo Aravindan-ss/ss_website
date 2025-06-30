@@ -4,12 +4,12 @@ export const heroSectionData = {
   title: "AI in  eCommerce",
   beforeheading: "Transforming",
   heading: "eCommerce",
-  afterheading: "with AI",
+  afterheading: "with AI ",
   subheading: "Solutions",
   headingclass: "text-[#D8F629]",
   subheadingclass: "",
   description:
-    "Explore AI solutions that adapt to learner needs, enhance teaching efficiency, and automate administrative workflows. Build future-ready learning experiences with AI.",
+    "Harness advanced AI solutions to personalize shopping experiences, streamline inventory with smart forecasting, and automate customer engagement at scale.",
   textAlign: "left" as const,
   textColor: "text-white",
   showButton: true,
@@ -41,7 +41,7 @@ export const industryOverview = {
     },
     {
       icon: "/images/ai-solutions-for-ecommerce/industry-overview/fraud-detection.webp",
-      title: "Customer Experience Personalization",
+      title: "Fraud detection and prevention",
     },
     {
       icon: "/images/ai-solutions-for-ecommerce/industry-overview/voice.webp",
@@ -225,7 +225,7 @@ export const keyBenefits = {
 };
 
 export const aiSolutionsData = {
-  label: "AI in Education",
+  label: "AI Solutions",
   heading: "Our AI Solutions for Next-Gen E-commerce",
   description:
     "Unlock new possibilities in e-commerce with our tailored AI solutions that drive personalization, boost efficiency, and enhance decision-making. From smart recommendations to automated customer support, here are the solutions we offer to help you stay ahead of the competition.",
