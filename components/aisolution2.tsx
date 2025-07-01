@@ -46,7 +46,7 @@ const AiSolution2 = ({
 
           {/* RIGHT SECTION - Scrollable Cards */}
           <div className="lg:w-1/2 w-full flex flex-col gap-6 pr-2">
-            {cards.map((card, index) => (
+            {cards.map((card) => (
               <div key={card.id} className="bg-white rounded-2xl p-4 shadow-md">
                 <Image
                   src={card.image}
@@ -57,7 +57,9 @@ const AiSolution2 = ({
                 />
                 <div className="flex items-center gap-2 mb-2">
                   <Image src={card.icon} alt="icon" width={50} height={50} />
-                  <h3 className="font-semibold text-lg">{card.title}</h3>
+                  <h3 className="font-bold text-[28px] md:text-[28px] lg:text-[28px] leading-[42px] h-[84px]">
+                    {card.title}
+                  </h3>
                 </div>
                 <p className="text-[17px] text-gray-600 text-justify leading-loose mb-3">
                   {card.description}
