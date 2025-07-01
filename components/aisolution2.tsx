@@ -36,7 +36,7 @@ const AiSolution2 = ({
             <h2 className="text-2xl md:text-[calc(1.25rem+0.75vw)] font-bold text-[#232c3b] mb-4">
               {heading}
             </h2>
-            <p className="text-[17px] text-gray-600 leading-relaxed md:leading-[1.75]">
+            <p className="text-[17px] text-gray-600 leading-relaxed md:leading-[1.75] mb-12">
               {subheading}
             </p>
             <button className="bg-[#ff0042] hover:bg-[#d1054c] text-white px-6 py-2 rounded-lg shadow-md font-semibold cursor-pointer">
