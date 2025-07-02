@@ -376,3 +376,8 @@
 .fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
+/* Change active dot to solid black */
+.slick-dots li.slick-active div {
+  background-color: rgb(0 0 0) !important; /* matches text-black */
+}
